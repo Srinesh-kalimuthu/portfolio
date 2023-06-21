@@ -19,8 +19,7 @@ html {
 
 .navbar {
     width: 100%;
-    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
-    background-color: #161618;
+    background-color: #1F2226;
 }
 
 .nav-container {
@@ -40,7 +39,7 @@ html {
 
 .navbar .nav-container a {
     text-decoration: none;
-    color: #0e2431;
+    color: #5AB8E1;
     font-weight: 500;
     font-size: 1.2rem;
     padding: 0.7rem;
@@ -70,8 +69,8 @@ html {
 
 .nav-container .hamburger-lines {
     display: block;
-    height: 26px;
-    width: 32px;
+    height: 23px;
+    width: 28px;
     position: absolute;
     top: 17px;
     right: 20px;
@@ -104,10 +103,9 @@ html {
 }
 
 .navbar .menu-items {
-    padding-top: 120px;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    padding-top: 18%;
     height: 100vh;
-    width: 100%;
+    width: 15%;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
@@ -115,6 +113,8 @@ html {
     padding-left: 50px;
     transition: transform 0.5s ease-in-out;
     text-align: center;
+
+
 }
 
 .navbar .menu-items li {
@@ -125,8 +125,7 @@ html {
 
 .logo {
     position: absolute;
-    top: 10px;
-    left: 15px;
+    text-align: center;
     color: #D55E1F;
 }
 
@@ -149,3 +148,128 @@ html {
 .nav-container input[type="checkbox"]:checked~.logo {
     display: none;
 }
+
+
+
+/* main page section 2 */
+.bg {
+    background-color: #161618;
+}
+
+.sec2 {
+    min-height: 720px;
+    background-color: #161618;
+    padding-top: 5%;
+
+}
+
+.sec2col1 {
+    animation: floating 3s linear infinite;
+}
+
+.sec2col2 {
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    box-shadow: 10px 10px 5px #5AB8E1;
+    border-radius: 10px;
+    background-color: #1F2226;
+
+}
+
+.fpi {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.row-sec {
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+
+.cs1 {
+    animation: floating 3s linear infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.cs2 {
+    max-width: 100%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.cs3 {
+    max-width: 100%;
+    padding-top: 8%;
+}
+
+.linkprof {
+    color: #5AB8E1;
+    transition: 0.6s;
+}
+
+.gitprof {
+    color: #5AB8E1;
+    transition: 0.6s;
+}
+
+.medprof {
+    color: #5AB8E1;
+    transition: 0.6s;
+}
+
+.linkprof :hover {
+    color: #D55E1F;
+
+}
+
+.gitprof :hover {
+    color: #D55E1F;
+
+}
+
+.medprof :hover {
+    color: #D55E1F;
+}
+
+@media all and (max-width:640px) {
+    .sec2col1 {
+        padding-bottom: 20%;
+    }
+
+    .sec2col2 {
+        min-height: 250px;
+        max-width: fit-content;
+    }
+
+    .navbar .menu-items {
+        padding-top: 120%;
+        height: 85vh;
+        width: 100%;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 50px;
+        transition: transform 0.5s ease-in-out;
+        text-align: center;
+        background: #D55E1F;
+
+
+    }
+}
+
+/* main page section 2 */
