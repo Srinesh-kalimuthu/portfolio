@@ -499,6 +499,7 @@ html {
         max-width: fit-content;
         display: flex;
         transition: 1.0s ease-in-out;
+        margin-bottom: 5%;
     }
 
     .cpf {
@@ -507,6 +508,11 @@ html {
         align-items: center;
 
     }
+
+    /* 
+    .separatecol {
+        margin-bottom: 5%;
+    } */
 
     .cpm {
         display: flex;
@@ -533,7 +539,9 @@ html {
 /* section 5 starts here */
 
 .wrk {
-    border: 5px solid #000;
+    /* border: 5px solid #000; */
+    padding-top: 8%;
+    padding-bottom: 8%;
 }
 
 .wrk1 {
@@ -541,6 +549,11 @@ html {
     border: 2px solid #5AB8E1;
     transition: .5s ease;
     border-radius: 10px;
+    background-color: #1F2226;
+}
+
+.wrk1:hover {
+    transform: scale(1.02);
 }
 
 .wrk2 {
@@ -548,6 +561,11 @@ html {
     border: 2px solid #5AB8E1;
     transition: .5s ease;
     border-radius: 10px;
+    background-color: #1F2226;
+}
+
+.wrk2:hover {
+    transform: scale(1.02);
 }
 
 .wrk3 {
@@ -555,6 +573,11 @@ html {
     border: 2px solid #5AB8E1;
     transition: .5s ease;
     border-radius: 10px;
+    background-color: #1F2226;
+}
+
+.wrk3:hover {
+    transform: scale(1.02);
 }
 
 .project {
@@ -562,26 +585,24 @@ html {
 }
 
 .prop1 {
-    border: 5px solid #000;
     margin-top: 25%;
     margin-bottom: 5%;
     background-color: #1F2226;
 }
 
 .prop2 {
-    border: 5px solid #000;
     margin-top: 25%;
     margin-bottom: 5%;
     background-color: #1F2226;
 }
 
 .prop3 {
-    border: 5px solid #000;
+
     background-color: #1F2226;
     padding-left: 20%;
     margin-bottom: 5%;
     margin-top: 10%;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
 }
 
 .clickpro {
@@ -594,7 +615,7 @@ html {
     text-align: center;
     color: #5AB8E1;
     font-weight: bold;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 
 .project2 {
@@ -620,6 +641,36 @@ html {
     min-height: 720px;
     background-color: #161618;
     /* padding-top: 5%; */
+
+
+}
+
+@media all and (max-width:640px) {
+
+
+    .sec5 {
+        /* min-height: 470px; */
+        max-width: fit-content;
+    }
+
+    .sec5-subheading {
+        padding-top: 5%;
+    }
+
+    .wrk {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .wrk2 {
+        margin-top: 20%;
+        margin-bottom: 20%;
+        padding-bottom: 13%;
+    }
+
+    .wrk1 {
+        padding-bottom: 13%;
+    }
 
 
 }
