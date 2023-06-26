@@ -674,3 +674,164 @@ html {
 
 
 }
+
+/* section 5 ends here */
+
+/* section 6 starts here */
+.sec6 {
+    min-height: 720px;
+    background-color: #161618;
+}
+
+.contact {
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.talk {
+    border-radius: 10px;
+    filter: drop-shadow(-1px 2px 5px #5AB8E1);
+    border: 2px solid #5AB8E1;
+    background-color: #1F2226;
+}
+
+.touch {
+    filter: drop-shadow(-1px 2px 5px #5AB8E1);
+    border: 2px solid #5AB8E1;
+    min-height: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    background-color: #1F2226;
+
+}
+
+.mail {
+    margin-top: 5%;
+}
+
+.mailimg {
+    padding-bottom: 3%;
+}
+
+.mlig {
+    max-width: 80%;
+}
+
+.emltxt {
+    font-weight: bold;
+    padding-bottom: 3%;
+    color: #D55E1F;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.emltxtid {
+    font-weight: bold;
+    padding-bottom: 3%;
+    color: #5AB8E1;
+    text-align: center;
+}
+
+.emltxtme {
+    font-weight: bold;
+    padding-bottom: 2%;
+    margin-bottom: 7%;
+    color: #5AB8E1;
+    text-align: center;
+    border: 2px solid #5AB8E1;
+    margin-right: 35%;
+    margin-left: 35%;
+    transition: .5s ease;
+    padding-top: 1px;
+    border-radius: 5px;
+}
+
+.emltxtme:hover {
+    transform: scale(1.02);
+}
+
+.get {
+    font-weight: bold;
+    padding-bottom: 1%;
+    color: #D55E1F;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.form-floating {
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+.rgc1 {
+    margin-left: 20%;
+}
+
+
+.but {
+    padding-top: 10px;
+
+}
+
+.btnn {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.btn-info {
+    border-color: #F7641F;
+    color: #000;
+    background-color: #D55E1F;
+}
+
+.btn-info:hover {
+    border-color: #5AB8E1;
+    color: #000;
+    background-color: #5AB8E1;
+}
+
+@media all and (max-width:640px) {
+
+
+    .sec6 {
+        /* min-height: 470px; */
+        max-width: fit-content;
+    }
+
+    .sec6-subheading {
+        padding-top: 5%;
+    }
+
+    .mailimg {
+        max-width: 20%;
+    }
+
+    .talk {
+
+        max-width: fit-content;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .touch {
+        max-width: fit-content;
+        padding-right: 25%;
+        margin-top: 5%;
+    }
+
+    .btnn {
+        margin-left: 35%;
+        margin-bottom: 5%;
+    }
+
+    .emltxtme {
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+
+}
