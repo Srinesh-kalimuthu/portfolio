@@ -261,7 +261,7 @@ html {
 
     .navbar .menu-items {
         padding-top: 120%;
-        height: 85vh;
+        height: 105vh;
         width: 100%;
         transform: translate(-150%);
         display: flex;
