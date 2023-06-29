@@ -684,7 +684,7 @@ html {
 }
 
 .contact {
-    margin-top: 5%;
+    margin-top: 2%;
     padding-top: 3%;
     padding-bottom: 3%;
 }
@@ -696,7 +696,7 @@ html {
     background-color: #1F2226;
 }
 
-.touch {
+.box {
     filter: drop-shadow(-1px 2px 5px #5AB8E1);
     border: 2px solid #5AB8E1;
     min-height: 100%;
@@ -705,6 +705,24 @@ html {
     border-radius: 10px;
     background-color: #1F2226;
 
+}
+
+.form-group {
+    margin-top: 1rem;
+    color: whitesmoke;
+}
+
+.card {
+    background-color: #1F2226;
+    border: none;
+}
+
+.form-control {
+    margin-top: 0.5rem;
+    max-width: 90%;
+    text-align: center;
+    margin-left: 1rem;
+    background-color: #1F2226;
 }
 
 .mail {
@@ -740,12 +758,12 @@ html {
     margin-bottom: 7%;
     color: #5AB8E1;
     text-align: center;
-    border: 2px solid #5AB8E1;
-    margin-right: 35%;
-    margin-left: 35%;
-    transition: .5s ease;
-    padding-top: 1px;
+    border: 1px solid lightgray;
+    max-width: 60%;
+    padding-top: 3px;
     border-radius: 5px;
+    margin-left: 4.5rem;
+    cursor: pointer;
 }
 
 .emltxtme:hover {
@@ -759,17 +777,6 @@ html {
     text-align: center;
     padding-top: 5%;
 }
-
-.form-floating {
-    padding-top: 5%;
-    padding-bottom: 5%;
-
-}
-
-.rgc1 {
-    margin-left: 20%;
-}
-
 
 .but {
     padding-top: 10px;
@@ -818,12 +825,6 @@ html {
         margin-right: 5%;
     }
 
-    .touch {
-        max-width: fit-content;
-        padding-right: 25%;
-        margin-top: 5%;
-    }
-
     .btnn {
         margin-left: 35%;
         margin-bottom: 5%;
@@ -834,4 +835,17 @@ html {
         margin-left: 25%;
     }
 
+    .box {
+        max-width: fit-content;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .form-control {
+        margin-top: 0.5rem;
+        max-width: 95%;
+        text-align: center;
+        margin-left: 0.5rem;
+        background-color: #1F2226;
+    }
 }
