@@ -849,3 +849,43 @@ html {
         background-color: #1F2226;
     }
 }
+
+.footer {
+    min-height: 280px;
+    background-color: #D55E1F;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.foot_head {
+    font-weight: bolder;
+    color: #000;
+    padding-bottom: 1%;
+
+}
+
+.foot_reservation {
+    font-weight: bolder;
+    color: #000;
+    padding-top: 1rem;
+}
+
+.foot_content {
+    font-weight: bolder;
+    color: #000;
+}
+
+.iconprofile {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+
+}
+
+.profileclass {
+    list-style: none;
+    text-decoration: none;
+    padding-left: 1%;
+
+}
