@@ -1,22 +1,16 @@
-function sendMail() {
-    var params = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value,
-    };
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzdBI9OCsenePLsUHwQi5vBfztzMfN_IHWmo1AFSh16odpsQMXeXZbONykzJZlE5Zi0/exec'
+const form = document.forms['submit-to-google-sheet']
+const messageintimation = document.getElementById("messageintimation")
 
-    const serviceID = "YOUR_SERVICE_ID";
-    const templateID = "YOUR_TEMPLETE_ID";
-
-    emailjs.send(serviceID, templateID, params)
-        .then(res => {
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("message").value = "";
-            console.log(res);
-            alert("Your message sent successfully!!")
-
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            messageintimation.innerHTML = "👍🏻"
+            setTimeout(function () {
+                messageintimation.innerHTML = ""
+            }, 5000)
+            form.reset()
         })
-        .catch(err => console.log(err));
-
-}
+        .catch(error => console.error('Error!', error.message))
+})
